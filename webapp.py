@@ -51,13 +51,11 @@ if st.button("Analyze"):
             st.write("Prediction: Gender-based Cyberbullying!")
         elif predictions[0] == 2:
             st.write("Prediction: Religion-based Cyberbullying!")
-        elif predictions[0] == 3:
-            st.write("Prediction: Other Cyberbullying!")
         elif predictions[0] == 4:
             st.write("Prediction: Age-based Cyberbullying!")
         elif predictions[0] == 5:
             st.write("Prediction: Ethnicity-based Cyberbullying!")
         else:
-            st.write("Prediction: Not Cyberbullying")
+            st.write("Result: Not Cyberbullying")
     else:
         st.write("Please enter some text to analyze.")
