@@ -4,10 +4,6 @@ import nltk
 from nltk.corpus import stopwords
 nltk.download('stopwords')
 
-import sklearn
-print(sklearn.__version__)
-
-
 # Load the pre-trained model and vectorizer
 with open("xgm.pkl", 'rb') as file:
     x_g = pickle.load(file)
@@ -65,4 +61,3 @@ if st.button("Analyze"):
             st.write("Prediction: Not Cyberbullying")
     else:
         st.write("Please enter some text to analyze.")
-
