@@ -57,5 +57,6 @@ if st.button("Analyze"):
             st.write("Prediction: Ethnicity-based Cyberbullying!")
         else:
             st.write("Result: Not Cyberbullying")
+            st.write(predictions[0])
     else:
         st.write("Please enter some text to analyze.")
